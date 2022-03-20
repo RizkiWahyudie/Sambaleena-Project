@@ -2458,7 +2458,8 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     background-color: rgb(255, 255, 255);
     color: var(--color-red-one);
-    padding-top: 10rem;
+    padding-top: 0;
+    padding-bottom: 10rem;
     position: relative;
 }
 
@@ -2690,11 +2691,26 @@ html.no-csstransitions .home-content__main {
     background-color: rgb(169, 37, 37, 0.3);
 }
 
+.s-about .section-header {
+    padding-bottom: 0;
+}
+
 .about-desc {
-    font-size: 2.4rem;
-    line-height: 1.75;
+    /* font-size: 2.4rem; */
+    /* line-height: 1.75; */
     text-align: center;
     max-width: 1024px;
+    font-family: 'poppins', sans-serif;
+}
+
+.about-sejarah span {
+    font-size: 30px;
+    color: var(--color-red-one);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.about-sejarah p {
+    margin-top: 1rem;
 }
 
 
@@ -2812,6 +2828,17 @@ html.no-csstransitions .home-content__main {
     .stats h5 {
         margin-top: 3rem;
     }
+    .about-sejarah span {
+        font-size: 27px;
+        color: var(--color-red-one);
+        font-family: 'Sansita Swashed', cursive;
+    }
+    .about-sejarah p {
+        margin-top: 0.75rem;
+    }
+    .s-about .section-header {
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2885,7 +2912,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
     .about-desc {
-        font-size: 14px;
+        font-size: 13px;
+        margin: 0;
     }
 }
 
@@ -3017,6 +3045,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 600px) {
     .s-services {
         padding-top: 6rem;
+        padding-bottom: 6rem;
     }
     .services-list .service-item:nth-child(n) {
         padding-right: 10px;
@@ -3138,6 +3167,22 @@ html.no-csstransitions .home-content__main {
     -ms-transform: scale(0.5);
     transform: scale(0.5);
     z-index: 1;
+}
+
+.cursor {
+    position: absolute;
+    bottom: 35%;
+    right: 35%;
+    width: 80px;
+    display: none;
+}
+
+.textt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    display: none;
 }
 
 .item-folio__text {
@@ -3281,6 +3326,10 @@ html.no-csstransitions .home-content__main {
     .item-folio__title,
     .item-folio__cat {
         font-size: 1.4rem;
+    }
+    .cursor,
+    .textt {
+        display: block;
     }
 }
 
@@ -3880,6 +3929,9 @@ html.no-csstransitions .home-content__main {
         justify-content: center;
         text-align: center;
         padding-top: 10rem;
+    }
+    .home-left img {
+        padding-top: 5rem;
     }
     .home-content__main {
         text-align: center;
